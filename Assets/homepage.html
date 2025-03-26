@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureBank - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <h1>SecureBank</h1>
+            <p>Your Trusted Banking Partner</p>
+        </div>
+
+        <div class="login-container">
+            <div class="login-type-selector">
+                <button id="customer-selector" class="login-type-btn active">Customer</button>
+                <button id="employee-selector" class="login-type-btn">Employee</button>
+            </div>
+
+            <!-- Customer Login Form -->
+            <form id="customer-login-form" class="login-form active">
+                <h2>Customer Login</h2>
+                <div class="input-group">
+                    <label for="customer-username">Username</label>
+                    <input type="text" id="customer-username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="customer-password">Password</label>
+                    <input type="password" id="customer-password" name="password" required>
+                    <button type="button" class="password-toggle">Show</button>
+                </div>
+                <div class="remember-forgot">
+                    <div class="remember-me">
+                        <input type="checkbox" id="customer-remember" name="remember">
+                        <label for="customer-remember">Remember me</label>
+                    </div>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn-login">Login</button>
+                <div class="register-link">
+                    <span>Don't have an account?</span>
+                    <a href="#">Register</a>
+                </div>
+            </form>
+
+            <!-- Employee Login Form -->
+            <form id="employee-login-form" class="login-form">
+                <h2>Employee Login</h2>
+                <div class="input-group">
+                    <label for="employee-username">Employee ID</label>
+                    <input type="text" id="employee-username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="employee-password">Password</label>
+                    <input type="password" id="employee-password" name="password" required>
+                    <button type="button" class="password-toggle">Show</button>
+                </div>
+                <div class="employee-type">
+                    <label>Login as:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="manager" name="employee-type" value="manager" checked>
+                        <label for="manager">Manager</label>
+                        <input type="radio" id="admin" name="employee-type" value="admin">
+                        <label for="admin">Admin</label>
+                    </div>
+                </div>
+                <div class="remember-forgot">
+                    <div class="remember-me">
+                        <input type="checkbox" id="employee-remember" name="remember">
+                        <label for="employee-remember">Remember me</label>
+                    </div>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn-login">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 SecureBank. All rights reserved.</p>
+    </footer>
+
+    <script src="homepage.js"></script>
+</body>
+</html>
